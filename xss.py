@@ -1,7 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 
-# Sample payloads to test for XSS. In real-world scenarios, this list will be much more extensive.
 XSS_PAYLOADS = [
     '"><script>alert(\'XSS\')</script>',
     '\' onfocus=alert(document.domain) autofocus=1>',
